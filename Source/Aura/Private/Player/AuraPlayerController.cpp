@@ -2,12 +2,21 @@
 
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "GameFramework/PlayerController.h"
 #include "Player/AuraPlayerController.h"
 
 AAuraPlayerController::AAuraPlayerController()
 {
 	bReplicates = true;
+	//
 }
+
+//만약 멀티플레이 게임이라면 자기 자신의 플레이어 컨트롤러에서만 플레이어 틱이 호출된다는 것이다.
+void AAuraPlayerController::PlayerTick(float DeltaTime)
+{
+	Super::PlayerTick(DeltaTime);
+}
+
 
 void AAuraPlayerController::BeginPlay()
 {
@@ -56,4 +65,8 @@ void AAuraPlayerController::Move(const FInputActionValue& Value)
 		ControllerPawn->AddMovementInput(rightDirection, InputAxisVector.X);
 	}
 
+}
+
+void AAuraPlayerController::CursorTrace()
+{
 }
