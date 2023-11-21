@@ -8,11 +8,12 @@
 #include "AbilitySystemComponent.h"
 #include "AuraCharacterBase.generated.h"
 
+//왜 클래스를 전방 선언??
 class UAbilitySystemComponent;
 class UAttributeSet;
 
 UCLASS(Abstract)
-class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInterface;
+class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
