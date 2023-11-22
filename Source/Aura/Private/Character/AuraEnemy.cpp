@@ -21,7 +21,7 @@ void AAuraEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 	AbilitySystemComponent->InitAbilityActorInfo(this, this);
-	//owner actor , avatar actor �־ �ʱ�ȭ
+	//owner actor , avatar actor 넣어서 초기화
 
 }
 

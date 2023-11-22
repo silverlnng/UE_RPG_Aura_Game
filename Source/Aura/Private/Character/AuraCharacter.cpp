@@ -37,12 +37,12 @@ void AAuraCharacter::OnRep_PlayerState()
  
 void AAuraCharacter::InitAbilityActorInfo()
 {
-	AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	/*AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
 	check(AuraPlayerState);
 
 	AuraPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(AuraPlayerState, this);
 	//state를 가져와서 체크하고 초기화 하는데 사용
 	//state가AbilityActor의 owner이기때문에 
 	AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
-	AttributeSet = AuraPlayerState->GetAttributeSet();
+	AttributeSet = AuraPlayerState->GetAttributeSet();*/
 }
