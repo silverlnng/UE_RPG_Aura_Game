@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Components/SkeletalMeshComponent.h"
 #include "Character/AuraCharacterBase.h"
+#include "Components/SkeletalMeshComponent.h"
 
 // Sets default values
 AAuraCharacterBase::AAuraCharacterBase()

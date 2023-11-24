@@ -1,9 +1,9 @@
  // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "AbilitySystemComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"		//GetCharacterMovement 사용하려면 선언
 #include "Character/AuraCharacter.h"
 #include "Player/AuraPlayerState.h"
+#include "AbilitySystemComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"		//GetCharacterMovement 사용하려면 선언
 
 AAuraCharacter::AAuraCharacter()
 {
